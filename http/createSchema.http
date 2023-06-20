@@ -1,0 +1,22 @@
+POST http://localhost:8080/v1/schema
+Content-Type: application/json
+
+{
+  "class": "Groceries",
+  "moduleConfig": {
+    "img2vec-neural": {
+      "imageFields": [
+        "image"
+      ]
+    }
+  },
+  "properties": [
+    {
+      "name": "image",
+      "dataType": [
+        "blob"
+      ]
+    }
+  ],
+  "vectorizer": "img2vec-neural"
+}

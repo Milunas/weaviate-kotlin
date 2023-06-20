@@ -1,0 +1,14 @@
+POST http://localhost:8000/images
+Content-Type: multipart/form-data; boundary=boundary
+Accept: image/jpeg
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="test.png"
+
+// The 'input.txt' file will be uploaded
+< ../test.png
+--boundary
+Content-Disposition: form-data; name="advertType"
+
+1
+--boundary
